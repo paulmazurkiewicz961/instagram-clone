@@ -23,6 +23,11 @@
     <div class="q-pt-xl q-pa-md">
       <q-btn class="col" flat rounded align="left" icon="density_medium" label="More"/>
     </div>
+    <div class="col-6">
+      <q-card square class="shadow-1">
+      
+      </q-card>
+ </div>
     </q-drawer>
 
     <q-page-container>

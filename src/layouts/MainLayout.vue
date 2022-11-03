@@ -61,23 +61,23 @@ const leftDrawerOpen = ref(false);
     class="bg-white text-grey"
     >
       <q-toolbar class="justify-evenly"> 
-        <q-btn label="Meta" flat size="10px" padding="sm"/>
-        <q-btn label="About" flat size="10px" padding="sm"/>
-        <q-btn label="Blogs" flat size="10px" padding="sm" />
-        <q-btn label="Jobs" flat size="10px" padding="sm"/>
-        <q-btn label="Help" flat size="10px" padding="sm"/>
-        <q-btn label="API" flat size="10px" padding="sm"/>
-        <q-btn label="Privacy" flat size="10px" padding="sm"/>
-        <q-btn label="Terms" flat size="10px" padding="sm"/>
-        <q-btn label="Top Accounts" flat size="10px" padding="sm"/>
-        <q-btn label="Hashtags" flat size="10px" padding="sm"/>
-        <q-btn label="Locations" flat size="10px" padding="sm"/>
-        <q-btn label="Instagram Lite" flat size="10px" padding="sm"/>
-        <q-btn label="Contact uploading and non-users" flat size="10px" padding="sm"/>
-        <q-btn label="Dance" flat size="10px" padding="sm"/>
-        <q-btn label="Food and drinks" flat size="10px" padding="sm"/>
-        <q-btn label="Home and garden" flat size="10px" padding="sm"/>
-        <q-btn label="Music" flat size="10px" padding="sm"/>
+        <q-btn label="Meta" flat size="11px" padding="sm"/>
+        <q-btn label="About" flat size="11px" padding="sm"/>
+        <q-btn label="Blogs" flat size="11px" padding="sm" />
+        <q-btn label="Jobs" flat size="11px" padding="sm"/>
+        <q-btn label="Help" flat size="11px" padding="sm"/>
+        <q-btn label="API" flat size="11px" padding="sm"/>
+        <q-btn label="Privacy" flat size="11px" padding="sm"/>
+        <q-btn label="Terms" flat size="11px" padding="sm"/>
+        <q-btn label="Top Accounts" flat size="11px" padding="sm"/>
+        <q-btn label="Hashtags" flat size="11px" padding="sm"/>
+        <q-btn label="Locations" flat size="11px" padding="sm"/>
+        <q-btn label="Instagram Lite" flat size="11px" padding="sm"/>
+        <q-btn label="Contact uploading and non-users" flat size="11px" padding="sm"/>
+        <q-btn label="Dance" flat size="11px" padding="sm"/>
+        <q-btn label="Food and drinks" flat size="11px" padding="sm"/>
+        <q-btn label="Home and garden" flat size="11px" padding="sm"/>
+        <q-btn label="Music" flat size="11px" padding="sm"/>
 
         <!-- To-do: Complete Buttons -->
         <!--Complete the Q-drawer -->

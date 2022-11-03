@@ -9,13 +9,13 @@
           class="q-mr-xl"
         />
       </div>
-      <div class="col-6 q-pt-xs">
+      <div class="col-6 q-pt-xs q-pb-lg">
         <q-card square class="shadow-1">
           <q-card-section class="white text-center">
             <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
           </q-card-section>
           <q-card-section>
-            <q-form class="q-px-sm q-pt-xl q-pb-lg q-gutter-sm">
+            <q-form class="q-px-sm q-pt-sm q-pb-xs q-gutter-sm">
               <q-input      
                 standout
                 square
@@ -41,7 +41,7 @@
               </q-input>
             </q-form>
           </q-card-section>
-          <q-card-actions class="q-px-lg">
+          <q-card-actions class="q-px-lg q-pb-sm">
             <q-btn
               align="around"
               unelevated
@@ -69,9 +69,9 @@
           </q-card-section>
         </q-card>
         <q-card square class="q-mt-md">
-          <q-card-section class="text-center text-blue-grey-10 row justify-center">
+          <q-card-section class="text-center row text-blue-grey-10 justify-center">
             <p>Don't have an account?</p>
-            <q-btn flat color="primary" class="q-pa-xs text-blue" label="Sign up" />
+            <q-btn flat color="primary" class="text-blue q-pl-xs q-pb-sm" label="Sign up" />
           </q-card-section>
         </q-card>
 
