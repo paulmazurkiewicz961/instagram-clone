@@ -16,8 +16,10 @@
           </q-card-section>
           <q-card-section>
             <q-form class="q-px-sm q-pt-sm q-pb-xs q-gutter-sm">
-              <q-input      
-                standout
+              <q-input
+                color="grey-12"
+                bg-color="grey-12"      
+                outlined
                 square
                 clearable
                 v-model="user.email"
@@ -30,7 +32,9 @@
                 <template v-slot:prepend> </template>
               </q-input>
               <q-input
-                standout
+                color="grey-12"
+                bg-color="grey-12"            
+                outlined
                 square
                 clearable
                 v-model="user.password"
@@ -46,13 +50,13 @@
               align="around"
               unelevated
               size="md"
-              color="blue"
+              color="light-blue"
               class="full-width text-white"
               label="Log In"
               :to="{name:'InstagramFeed'}"
             />
           </q-card-actions>
-          <div class="q-py-xs">
+          <div class="q-pt-xs">
           <q-card-section class="text-center text-blue-gray-8">
             OR            
           </q-card-section>
@@ -71,7 +75,7 @@
         <q-card square class="q-mt-md">
           <q-card-section class="text-center row text-blue-grey-10 justify-center">
             <p>Don't have an account?</p>
-            <q-btn flat color="primary" class="text-blue q-pl-xs q-pb-sm" label="Sign up" />
+            <q-btn flat color="primary" class="text-blue q-pl-xs q-pb-sm row" label="Sign up" />
           </q-card-section>
         </q-card>
 
