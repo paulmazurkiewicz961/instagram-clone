@@ -2,9 +2,9 @@
   <q-layout view="lHh Lpr lFf">
     
       
-    <q-footer class="bg-white text-grey"  >
+    <q-footer reveal class="bg-white text-grey q-px-l text2" >
       <q-toolbar>
-        <q-btn label="Meta" flat/> 
+        <q-btn label="Meta" flat /> 
         <q-btn label="About" flat/> 
         <q-btn label="Blogs" flat/> 
         <q-btn label="Jobs" flat/> 

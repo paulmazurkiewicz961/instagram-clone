@@ -1,61 +1,97 @@
 <template>
-  <q-page
-    class="window-height window-width row justify-center items-center"
-    style="background: linear-gradient(#0000)"
-  >
+  <q-page class="window-height window-width row justify-center items-center">
     <div class="row">
       <div class="col-6 q-px-xl">
         <q-img
-          height="500px"
-          width="300px"
+          height="600px"
+          width="360px"
           src="../assets/iphone.png"
           class="q-mr-xl"
         />
       </div>
-      <div class="col-6">
-        <q-card square class="shadow-24" style="width: 300px; height: 485px">
-          <q-card-section class="bg-deep-purple-7">
-            <div class="text-h5 text-white q-my-md">Instagram</div>
+      <div class="col-6 q-pt-xs">
+        <q-card square class="shadow-1">
+          <q-card-section class="white text-center">
+            <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
           </q-card-section>
           <q-card-section>
-            <q-form class="q-px-sm q-pt-xl q-pb-lg">
-              <q-input
+            <q-form class="q-px-sm q-pt-xl q-pb-lg q-gutter-sm">
+              <q-input      
+                standout
                 square
                 clearable
                 v-model="user.email"
                 type="email"
-                label="Email or username"
+                label="Phone number, username or email address"
+                
               >
-                <template v-slot:prepend>
-                  <q-icon name="email" />
-                </template>
+                <q-separator />
+
+                <template v-slot:prepend> </template>
               </q-input>
               <q-input
+                standout
                 square
                 clearable
                 v-model="user.password"
                 type="password"
                 label="Password"
               >
-                <template v-slot:prepend>
-                  <q-icon name="lock" />
-                </template>
+                <template v-slot:prepend> </template>
               </q-input>
             </q-form>
           </q-card-section>
           <q-card-actions class="q-px-lg">
             <q-btn
+              align="around"
               unelevated
-              size="lg"
-              color="purple-4"
+              size="md"
+              color="blue"
               class="full-width text-white"
               label="Log In"
+              href="../pages/InstagramFeed.vue"
             />
           </q-card-actions>
-          <q-card-section class="text-center q-pa-sm">
-            <p class="text-grey-6">Forgotten your password?</p>
+          <div class="q-py-xs">
+          <q-card-section class="text-center text-blue-gray-8">
+            OR            
+          </q-card-section>
+          </div>
+          <div class="q-pt-xs">
+          <q-card-section class="text-center text-blue-10 text-weight-bold">
+            <q-icon name="fa-brands fa-square-facebook" />
+            Log in with Facebook
+          </q-card-section>
+          </div>
+          
+          <q-card-section class="text-center text-caption">
+            <p class="text-blue-10">Forgotten your password?</p>
           </q-card-section>
         </q-card>
+        <q-card square class="q-mt-md">
+          <q-card-section class="text-center text-blue-grey-10 row justify-center">
+            <p>Don't have an account?</p>
+            <q-btn flat color="primary" class="q-pa-xs text-blue" label="Sign up" />
+          </q-card-section>
+        </q-card>
+
+        <p class="col-12 text-center q-mt-md text-weight-regular">Get the app.</p>
+        <div class="row justify-center">
+          <q-img         
+            class="col-6 q-pr-sm"
+            src="../assets/appstore.png"
+            height="40px"
+            width="150px"
+            rounded-borders
+          />
+        
+          <q-img
+            class="col-6 q-ml-sm"
+            src="../assets/googlestore.png"
+            height="40px"
+            width="150px"
+          />
+        </div>
       </div>
     </div>
   </q-page>
