@@ -11,7 +11,7 @@
     <div class="q-pt-md q-pl-md">
     <q-img src="../assets/Instalogo.png" height="37px" width="150px" />
     </div>
-    <div class="column q-pa-md q-gutter-sm" style="height: 530px">
+    <div class="column q-pa-md q-gutter-sm" style="height: 520px">
       <q-btn class="col" flat rounded align="left" icon="home" label="Home"/>
       <q-btn class="col" flat rounded align="left" icon="search" label="Search"/>
       <q-btn class="col" flat rounded align="left" icon="explore" label="Explore"/>
@@ -19,6 +19,9 @@
       <q-btn class="col" flat rounded align="left" icon="favorite_border" label="Notifications"/>
       <q-btn class="col" flat rounded align="left" icon="add_box" label="Create"/>
       <q-btn class="col" flat rounded align="left" icon="account_circle" label="Profile"/>
+    </div>
+    <div class="q-pt-xl q-pa-md">
+      <q-btn class="col" flat rounded align="left" icon="density_medium" label="More"/>
     </div>
     </q-drawer>
 
