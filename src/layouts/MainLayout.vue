@@ -1,39 +1,9 @@
-<template>
-  <q-layout view="lHh Lpr lFf">
-    
-      
-    <q-footer reveal class="bg-white text-grey q-px-l text2" >
-      <q-toolbar>
-        <q-btn label="Meta" flat /> 
-        <q-btn label="About" flat/> 
-        <q-btn label="Blogs" flat/> 
-        <q-btn label="Jobs" flat/> 
-        <q-btn label="Help" flat/> 
-        <q-btn label="API" flat/> 
-        <q-btn label="Privacy" flat/> 
-        <q-btn label="Terms" flat/> 
-        <q-btn label="Top Accounts" flat/> 
-        <q-btn label="Hashtags" flat/> 
-        <q-btn label="Locations" flat/> 
-        <q-btn label="Instagram Lite" flat/> 
-        <q-btn label="Contact uploading and non-users" flat/> 
-        <q-btn label="Dance" flat/> 
-        <q-btn label="Food and drinks" flat/> 
-        <q-btn label="Home and garden" flat/> 
-        <q-btn label="Music" flat/> 
-        
-          <!-- To-do: Complete Buttons -->
-      </q-toolbar>
-    </q-footer>
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
-</template>
-
-<script>
+<script setup>
 import { defineComponent, ref } from "vue";
+import { useRoute} from "vue-router";
 import EssentialLink from "components/EssentialLink.vue";
+
+const route = useRoute()
 
 const linksList = [
   {
@@ -80,17 +50,41 @@ const linksList = [
   },
 ];
 
-export default defineComponent({
-  name: "MainLayout",
-
-  
-
-  setup() {
-    const leftDrawerOpen = ref(false);
-
-    return {
-      essentialLinks: linksList
-    };
-  },
-});
+const leftDrawerOpen = ref(false);
 </script>
+<template>
+  <q-layout view="lHh Lpr lFf">
+    <q-drawer v-if="route.name == 'InstagramFeed'"></q-drawer>
+    <q-footer 
+    v-else 
+    reveal 
+    class="bg-white text-grey"
+    >
+      <q-toolbar class="justify-evenly"> 
+        <q-btn label="Meta" flat size="10px" padding="sm"/>
+        <q-btn label="About" flat size="10px" padding="sm"/>
+        <q-btn label="Blogs" flat size="10px" padding="sm" />
+        <q-btn label="Jobs" flat size="10px" padding="sm"/>
+        <q-btn label="Help" flat size="10px" padding="sm"/>
+        <q-btn label="API" flat size="10px" padding="sm"/>
+        <q-btn label="Privacy" flat size="10px" padding="sm"/>
+        <q-btn label="Terms" flat size="10px" padding="sm"/>
+        <q-btn label="Top Accounts" flat size="10px" padding="sm"/>
+        <q-btn label="Hashtags" flat size="10px" padding="sm"/>
+        <q-btn label="Locations" flat size="10px" padding="sm"/>
+        <q-btn label="Instagram Lite" flat size="10px" padding="sm"/>
+        <q-btn label="Contact uploading and non-users" flat size="10px" padding="sm"/>
+        <q-btn label="Dance" flat size="10px" padding="sm"/>
+        <q-btn label="Food and drinks" flat size="10px" padding="sm"/>
+        <q-btn label="Home and garden" flat size="10px" padding="sm"/>
+        <q-btn label="Music" flat size="10px" padding="sm"/>
+
+        <!-- To-do: Complete Buttons -->
+        <!--Complete the Q-drawer -->
+      </q-toolbar>
+    </q-footer>
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+  </q-layout>
+</template>

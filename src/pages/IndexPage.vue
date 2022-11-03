@@ -49,7 +49,7 @@
               color="blue"
               class="full-width text-white"
               label="Log In"
-              href="../pages/InstagramFeed.vue"
+              :to="{name:'InstagramFeed'}"
             />
           </q-card-actions>
           <div class="q-py-xs">
