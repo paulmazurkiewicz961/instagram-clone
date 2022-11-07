@@ -61,7 +61,7 @@ const leftDrawerOpen = ref(false);
     class="bg-white text-grey"
     >
     <div class="column">
-      <q-toolbar class="justify-center col-6"> 
+      <q-toolbar class="justify-center col-6 q-pb-sm"> 
         <q-btn label="Meta" flat size="12px" padding="xs"/>
         <q-btn label="About" flat size="12px" padding="xs"/>
         <q-btn label="Blogs" flat size="12px" padding="xs" />
@@ -79,15 +79,21 @@ const leftDrawerOpen = ref(false);
         <!-- To-do: Complete Buttons -->
         <!--Complete the Q-drawer -->
       </q-toolbar>
-      <q-toolbar class="justify-center col-6">
+      <q-toolbar class="justify-center col-6 q-pb-md">
         <q-btn-dropdown label="English" flat size="12px" padding="sm">
           <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
             <q-item-label>Francais</q-item-label>
           </q-item-section>
+          <q-item-section>
+            <q-item-label>Deutsch</q-item-label>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Italiano</q-item-label>
+          </q-item-section>
         </q-item>
         </q-btn-dropdown>
-        <q-btn align="left" label="2022 Instagram from Meta" flat size="12px" icon="copyright" padding="sm"/>
+        <q-btn align="right" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright" padding="sm"/>
       </q-toolbar>
       </div>
     </q-footer>
