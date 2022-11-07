@@ -96,7 +96,24 @@
       </q-item>
 
        </q-list>
+       <div class="row text-grey">
+        <q-btn label="About" flat size="12px" padding="xs"/>
+        <q-btn label="Help" flat size="12px" padding="xs"/>
+        <q-btn label="Press" flat size="12px" padding="xs"/>
+        <q-btn label="API" flat size="12px" padding="xs"/>
+        <q-btn label="Jobs" flat size="12px" padding="xs"/>
+        <q-btn label="Privacy" flat size="12px" padding="xs"/>
+        <q-btn label="Terms" flat size="12px" padding="xs"/>
+        </div>
+        <div class="row text-grey">
+        <q-btn label="Locations" flat size="12px" padding="xs"/>
+        <q-btn label="Language" flat size="12px" padding="xs"/>  
+        </div>
+        <div class="text-grey">
+           <q-btn align="right" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright"/>
+        </div>
        </div>
+       
 
     <q-page-container>
       <router-view />
