@@ -57,9 +57,14 @@
           </q-card-section>
           <q-card-section class="column justify-start">
             <p>Coming in 2023, Suicide Squad: Kill The Justice League. The legendary group will take on the mightiest group of heroes on this planet. </p>
-            <p class="text-grey text-weight-medium">View all 666 comments </p>
-
-          </q-card-section>
+            <p class="text-grey text-subtitle2">View all 666 comments </p>
+            <p class="text-grey text-caption">23 hours ago</p>
+             </q-card-section>
+             <q-separator/>
+             <q-card-section>
+              <q-input v-model="text" label="Add a comment"/>
+              
+             </q-card-section>
             
 
         </q-card>
