@@ -47,11 +47,24 @@
             <q-img src="../assets/suicidesquad.jpg"
             width="580px"/>
           </q-card-section>
+          <q-card-section class="row justify-start">
+            <q-btn class="row" flat rounded  icon="favorite_border"/>
+            <q-btn class="row" flat rounded  icon="mode_comment"/>
+            <q-btn class="row" flat rounded  icon="send"/>
+          </q-card-section>
+          <q-card-section class="row justify-start">
+          <p class="text-weight-bold">Likes: Michelle_owens and others</p>
+          </q-card-section>
+          <q-card-section class="column justify-start">
+            <p>Coming in 2023, Suicide Squad: Kill The Justice League. The legendary group will take on the mightiest group of heroes on this planet. </p>
+            <p class="text-grey text-weight-medium">View all 666 comments </p>
+
+          </q-card-section>
             
 
         </q-card>
         </div>      
-       <div class="col-4 q-pt-xl q-pr-sm column">
+       <div class="col-4 q-pt-xl q-pl-xl column">
        <q-list class="columb">
       <q-item clickable v-ripple >
         <q-item-section>
