@@ -62,57 +62,108 @@
              </q-card-section>
              <q-separator/>
              <q-card-section>
-              <q-input v-model="text" label="Add a comment"/>
-              
+              <q-input v-model="text" label="Add a comment"/>       
              </q-card-section>
             
 
         </q-card>
         </div>      
        <div class="col-4 q-pt-xl q-pl-xl column">
-       <q-list class="columb">
-      <q-item clickable v-ripple >
+       <q-list class="row justify-start q-pb-lg">
+      <q-item clickable v-ripple>
+        <q-item-section side>
+        <q-avatar round size="58px">
+          <img src="../assets/suicidesquad.jpg"/>
+        </q-avatar>
+        </q-item-section>
         <q-item-section>
-        <q-avatar color="black" text-color="green" icon="bolt"/>
-        <q-item-section> Picture of a bolt</q-item-section>
+          <q-item-label>Suicide_squadgame</q-item-label>
+        <q-item-label caption>Official Profile</q-item-label>
+        </q-item-section>
+        <q-item-section side class="text-blue text-weight-bold">
+          <q-btn label="Switch" flat size="12px" padding="xs"/> 
         </q-item-section>
       </q-item>
+      
+      
       <q-item>
       <q-item-section>
         <p class="text-weight-bold text-blue-grey-3">Suggestions for you</p>
       </q-item-section>   
       </q-item>
-      <q-item>
+      <q-item clickable v-ripple>
+        <q-item-section side>
+        <q-avatar round size="38px">
+          <img src="../assets/suicidesquad.jpg"/>
+        </q-avatar>
+        </q-item-section>
         <q-item-section>
-          <q-avatar color="black" text-color="green" icon="bolt"/>
-          <q-item-section> Picture of a bolt</q-item-section>
+          <q-item-label>Suicide_squadgame</q-item-label>
+        <q-item-label caption>Official Profile</q-item-label>
+        </q-item-section>
+        <q-item-section side class="text-blue text-weight-bold">
+          <q-btn label="Follow" flat size="12px" padding="xs"/> 
         </q-item-section>
       </q-item>
-      <q-item>
+      <q-item clickable v-ripple>
+        <q-item-section side>
+        <q-avatar round size="38px">
+          <img src="../assets/suicidesquad.jpg"/>
+        </q-avatar>
+        </q-item-section>
         <q-item-section>
-          <q-avatar color="black" text-color="green" icon="bolt"/>
-          <q-item-section> Picture of a bolt</q-item-section>
+          <q-item-label>Suicide_squadgame</q-item-label>
+        <q-item-label caption>Official Profile</q-item-label>
+        </q-item-section>
+        <q-item-section side class="text-blue text-weight-bold">
+          <q-btn label="Follow" flat size="12px" padding="xs"/> 
         </q-item-section>
       </q-item>
-      <q-item>
+      <q-item clickable v-ripple>
+        <q-item-section side>
+        <q-avatar round size="38px">
+          <img src="../assets/suicidesquad.jpg"/>
+        </q-avatar>
+        </q-item-section>
         <q-item-section>
-          <q-avatar color="black" text-color="green" icon="bolt"/>
-          <q-item-section> Picture of a bolt</q-item-section>
+          <q-item-label>Suicide_squadgame</q-item-label>
+        <q-item-label caption>Official Profile</q-item-label>
+        </q-item-section>
+        <q-item-section side class="text-blue text-weight-bold">
+          <q-btn label="Follow" flat size="12px" padding="xs"/> 
         </q-item-section>
       </q-item>
-      <q-item>
+      <q-item clickable v-ripple>
+        <q-item-section side>
+        <q-avatar round size="38px">
+          <img src="../assets/suicidesquad.jpg"/>
+        </q-avatar>
+        </q-item-section>
         <q-item-section>
-          <q-avatar color="black" text-color="green" icon="bolt"/>
-          <q-item-section> Picture of a bolt</q-item-section>
+          <q-item-label>Suicide_squadgame</q-item-label>
+        <q-item-label caption>Official Profile</q-item-label>
+        </q-item-section>
+        <q-item-section side class="text-blue text-weight-bold">
+          <q-btn label="Follow" flat size="12px" padding="xs"/> 
         </q-item-section>
       </q-item>
-      <q-item>
+      <q-item clickable v-ripple>
+        <q-item-section side>
+        <q-avatar round size="38px">
+          <img src="../assets/suicidesquad.jpg"/>
+        </q-avatar>
+        </q-item-section>
         <q-item-section>
-          <q-avatar color="black" text-color="green" icon="bolt"/>
-          <q-item-section> Picture of a bolt</q-item-section>
+          <q-item-label>Suicide_squadgame</q-item-label>
+        <q-item-label caption>Official Profile</q-item-label>
+        </q-item-section>
+        <q-item-section side class="text-blue text-weight-bold">
+          <q-btn label="Follow" flat size="12px" padding="xs"/> 
         </q-item-section>
       </q-item>
-
+      
+      
+      
        </q-list>
        <div class="row text-grey">
         <q-btn label="About" flat size="12px" padding="xs"/>
@@ -127,7 +178,7 @@
         <q-btn label="Locations" flat size="12px" padding="xs"/>
         <q-btn label="Language" flat size="12px" padding="xs"/>  
         </div>
-        <div class="text-grey">
+        <div class="text-grey justify-start">
            <q-btn align="right" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright"/>
         </div>
        </div>
