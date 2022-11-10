@@ -89,7 +89,8 @@
       <q-item>
       <q-item-section>
         <p class="text-weight-bold text-blue-grey-3">Suggestions for you</p>
-      </q-item-section>   
+      </q-item-section>
+      
       </q-item>
       <q-item clickable v-ripple>
         <q-item-section side>
@@ -165,21 +166,23 @@
       
       
        </q-list>
-       <div class="row text-grey">
-        <q-btn label="About" flat size="12px" padding="xs"/>
-        <q-btn label="Help" flat size="12px" padding="xs"/>
-        <q-btn label="Press" flat size="12px" padding="xs"/>
-        <q-btn label="API" flat size="12px" padding="xs"/>
-        <q-btn label="Jobs" flat size="12px" padding="xs"/>
-        <q-btn label="Privacy" flat size="12px" padding="xs"/>
-        <q-btn label="Terms" flat size="12px" padding="xs"/>
+       <div class="col">
+       <div class="row text-grey col">
+        <q-btn label="About" flat size="10px" padding="xs"/>
+        <q-btn label="Help" flat size="10px" padding="xs"/>
+        <q-btn label="Press" flat size="10px" padding="xs"/>
+        <q-btn label="API" flat size="10px" padding="xs"/>
+        <q-btn label="Jobs" flat size="10px" padding="xs"/>
+        <q-btn label="Privacy" flat size="10px" padding="xs"/>
+        <q-btn label="Terms" flat size="10px" padding="xs"/>
         </div>
-        <div class="row text-grey">
-        <q-btn label="Locations" flat size="12px" padding="xs"/>
-        <q-btn label="Language" flat size="12px" padding="xs"/>  
+        <div class="row text-grey col">
+        <q-btn label="Locations" flat size="10px" padding="xs"/>
+        <q-btn label="Language" flat size="10px" padding="xs"/>  
         </div>
-        <div class="text-grey justify-start">
-           <q-btn align="right" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright"/>
+        <div class="text-grey justify-start col">
+           <q-btn align="around" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright" padding="sm"/>
+        </div>
         </div>
        </div>
        
