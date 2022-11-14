@@ -62,25 +62,27 @@ const leftDrawerOpen = ref(false);
     >
     <div class="column">
       <q-toolbar class="justify-center col-6 q-pb-sm"> 
-        <q-btn label="Meta" flat size="12px" padding="xs"/>
-        <q-btn label="About" flat size="12px" padding="xs"/>
-        <q-btn label="Blogs" flat size="12px" padding="xs" />
-        <q-btn label="Jobs" flat size="12px" padding="xs"/>
-        <q-btn label="Help" flat size="12px" padding="xs"/>
-        <q-btn label="API" flat size="12px" padding="xs"/>
-        <q-btn label="Privacy" flat size="12px" padding="xs"/>
-        <q-btn label="Terms" flat size="12px" padding="xs"/>
-        <q-btn label="Top Accounts" flat size="12px" padding="xs"/>
-        <q-btn label="Hashtags" flat size="12px" padding="xs"/>
-        <q-btn label="Locations" flat size="12px" padding="xs"/>
-        <q-btn label="Instagram Lite" flat size="12px" padding="xs"/>
-        <q-btn label="Contact uploading & non-users" flat size="12px" padding="xs"/>
+        <q-btn label="Meta" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="About" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Blogs" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Jobs" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Help" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="API" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Privacy" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Terms" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Top Accounts" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Hashtags" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Locations" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Instagram Lite" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Contact uploading & non-users" flat size="12px" padding="xs" no-caps/>
+        <q-btn label="Digital Collectibles Privacy Notice" flat size="12px" padding="xs" no-caps/>
+        
         
         <!-- To-do: Complete Buttons -->
         <!--Complete the Q-drawer -->
       </q-toolbar>
       <q-toolbar class="justify-center col-6 q-pb-md">
-        <q-btn-dropdown label="English" flat size="12px" padding="sm">
+        <q-btn-dropdown label="English" flat size="12px" padding="sm" no-caps>
           <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
             <q-item-label>Francais</q-item-label>
@@ -93,7 +95,7 @@ const leftDrawerOpen = ref(false);
           </q-item-section>
         </q-item>
         </q-btn-dropdown>
-        <q-btn align="right" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright" padding="sm"/>
+        <q-btn align="right" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright" padding="sm" no-caps/>
       </q-toolbar>
       </div>
     </q-footer>
