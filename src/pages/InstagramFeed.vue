@@ -77,7 +77,7 @@
         </q-avatar>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Suicide_squadgame</q-item-label>
+          <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
@@ -99,7 +99,7 @@
         </q-avatar>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Suicide_squadgame</q-item-label>
+          <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
@@ -113,7 +113,7 @@
         </q-avatar>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Suicide_squadgame</q-item-label>
+          <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
@@ -127,7 +127,7 @@
         </q-avatar>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Suicide_squadgame</q-item-label>
+          <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
@@ -141,7 +141,7 @@
         </q-avatar>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Suicide_squadgame</q-item-label>
+          <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
@@ -155,7 +155,7 @@
         </q-avatar>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Suicide_squadgame</q-item-label>
+          <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
