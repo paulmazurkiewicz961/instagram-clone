@@ -87,7 +87,7 @@ const isSignUp = ref(false);
 
     <q-card square class="q-mt-md">
       <div class="row justify-center items-center">
-        <q-card-section> Don't have an account? </q-card-section>
+        <q-card-section> Have an account? </q-card-section>
         <q-card-section>
           <q-btn label="Sign Up" flat size="12px" color="blue" no-caps @click="$emit('switchPage')"  />
         </q-card-section>

@@ -4,7 +4,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { name:'IndexPage', path: '', component: () => import('pages/IndexPage.vue'),}, 
+      { name:'IndexPage', path: '', component: () => import('src/pages/LandingPage.vue'),}, 
       { name: 'InstagramFeed', path: '/feed', component: () => import('pages/InstagramFeed.vue') }
     ]
   },

@@ -58,7 +58,9 @@
           <q-card-section class="column justify-start">
             <p>Coming in 2023, Suicide Squad: Kill The Justice League. The legendary group will take on the mightiest group of heroes on this planet. </p>
             <p class="text-grey text-subtitle2">View all 666 comments </p>
-            <p class="text-grey text-caption">23 hours ago</p>
+            <p class="text-grey text-caption">23 hours ago</p> 
+            
+            <!-- Change the p tags to divs -->
              </q-card-section>
              <q-separator/>
              <q-card-section>
@@ -81,7 +83,7 @@
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
-          <q-btn label="Switch" flat size="12px" padding="xs"/> 
+          <q-btn label="Switch" flat size="12px" padding="xs" no-caps/> 
         </q-item-section>
       </q-item>
       
@@ -117,7 +119,7 @@
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
-          <q-btn label="Follow" flat size="12px" padding="xs"/> 
+          <q-btn label="Follow" flat size="12px" padding="xs" no-caps/> 
         </q-item-section>
       </q-item>
       <q-item clickable v-ripple>
@@ -131,7 +133,7 @@
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
-          <q-btn label="Follow" flat size="12px" padding="xs"/> 
+          <q-btn label="Follow" flat size="12px" padding="xs" no-caps/> 
         </q-item-section>
       </q-item>
       <q-item clickable v-ripple>
@@ -145,7 +147,7 @@
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
-          <q-btn label="Follow" flat size="12px" padding="xs"/> 
+          <q-btn label="Follow" flat size="12px" padding="xs" no-caps/> 
         </q-item-section>
       </q-item>
       <q-item clickable v-ripple>
@@ -159,7 +161,7 @@
         <q-item-label caption>Official Profile</q-item-label>
         </q-item-section>
         <q-item-section side class="text-blue text-weight-bold">
-          <q-btn label="Follow" flat size="12px" padding="xs"/> 
+          <q-btn label="Follow" flat size="12px" padding="xs" no-caps/> 
         </q-item-section>
       </q-item>
       
@@ -168,20 +170,20 @@
        </q-list>
        <div class="col">
        <div class="row text-grey col">
-        <q-btn label="About" flat size="10px" padding="xs"/>
-        <q-btn label="Help" flat size="10px" padding="xs"/>
-        <q-btn label="Press" flat size="10px" padding="xs"/>
-        <q-btn label="API" flat size="10px" padding="xs"/>
-        <q-btn label="Jobs" flat size="10px" padding="xs"/>
-        <q-btn label="Privacy" flat size="10px" padding="xs"/>
-        <q-btn label="Terms" flat size="10px" padding="xs"/>
+        <q-btn label="About" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="Help" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="Press" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="API" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="Jobs" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="Privacy" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="Terms" flat size="10px" padding="xs" no-caps/>
         </div>
         <div class="row text-grey col">
-        <q-btn label="Locations" flat size="10px" padding="xs"/>
-        <q-btn label="Language" flat size="10px" padding="xs"/>  
+        <q-btn label="Locations" flat size="10px" padding="xs" no-caps/>
+        <q-btn label="Language" flat size="10px" padding="xs" no-caps/>  
         </div>
         <div class="text-grey justify-start col">
-           <q-btn align="around" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright" padding="sm"/>
+           <q-btn align="around" label="2022 Quasagram By Pawel" flat size="12px" icon="copyright" padding="sm" no-caps/>
         </div>
         </div>
        </div>
