@@ -89,12 +89,21 @@ const isSignUp = ref(false);
       <div class="row justify-center items-center">
         <q-card-section> Have an account? </q-card-section>
         <q-card-section>
-          <q-btn label="Sign Up" flat size="12px" color="blue" no-caps @click="$emit('switchPage')"  />
+          <q-btn
+            label="Sign Up"
+            flat
+            size="12px"
+            color="blue"
+            no-caps
+            @click="$emit('switchPage')"
+          />
         </q-card-section>
       </div>
     </q-card>
 
-    <p class="col-12 text-center q-mt-md text-weight-regular">Get the app.</p>
+    <div class="col-12 text-center q-mt-md text-weight-regular">
+      Get the app.
+    </div>
     <div class="row justify-center">
       <q-img
         class="col-6 q-pr-sm"

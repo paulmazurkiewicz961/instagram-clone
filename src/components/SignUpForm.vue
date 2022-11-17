@@ -8,34 +8,31 @@ const user = reactive({
 </script>
 
 <template>
-   <div class="col-6 q-pt-xs q-pb-lg">
-    <q-card square class="shadow-1">
+  <div class="col-6 q-pt-xs q-pb-lg q-px-xl">
+    <q-card square class="shadow-1 q-px-xl">
+      <!-- Logo -->
       <q-card-section class="white text-center">
         <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
       </q-card-section>
-      <q-card-section class="text-center text-grey text-weight-bold">
-        Sign up to see photos and videos from your friends.
+      <q-card-section class="white text-center">
+        <div class="text-body1 text-weight-bolder text-grey-8">
+          Sign up to see photos and videos from your friends
+        </div>
       </q-card-section>
-      <q-card-section class="text-center text-blue-10 text-weight-bold">
+
+      <q-card-section class="row justify-center">
         <q-btn
-          align="center"
-          unelevated
-          size="md"
-          color="blue-10"
-          icon="facebook"
-          class="text-white text-center"
-          label="Log in With Facebook"
-          :to="{ name: 'InstagramFeed' }"
+          flat
+          no-caps
+          icon="fa-brands fa-square-facebook"
+          label="Log in with Facebook"
+          class="text-white bg-blue col-12"
         />
       </q-card-section>
-      <div class="q-pt-xs q-pb-xs">
-        <q-card-section class="text-center text-blue-gray-8">
-          OR
-        </q-card-section>
-      </div>
 
+      <!--Signup form -->
       <q-card-section>
-        <q-form class="q-px-sm q-pt-sm q-pb-xs q-gutter-sm">
+        <q-form class="q-pt-sm q-pb-xs q-gutter-sm row">
           <q-input
             color="grey-12"
             bg-color="grey-12"
@@ -44,24 +41,19 @@ const user = reactive({
             clearable
             v-model="user.email"
             type="email"
-            label="Mobile number or email address"
-          >
-            <q-separator />
-
-            <template v-slot:prepend> </template>
-          </q-input>
-          <q-input
+            label="Phone number, username or email address"
+            class="col-12"
+          /><q-input
             color="grey-12"
             bg-color="grey-12"
             outlined
             square
             clearable
-            v-model="user.password"
-            type="password"
-            label="Full name"
-          >
-            <template v-slot:prepend> </template>
-          </q-input>
+            v-model="user.email"
+            type="email"
+            label="Phone number, username or email address"
+            class="col-12"
+          />
           <q-input
             color="grey-12"
             bg-color="grey-12"
@@ -70,12 +62,9 @@ const user = reactive({
             clearable
             v-model="user.email"
             type="email"
-            label="Username"
-          >
-            <q-separator />
-
-            <template v-slot:prepend> </template>
-          </q-input>
+            label="Phone number, username or email address"
+            class="col-12"
+          />
           <q-input
             color="grey-12"
             bg-color="grey-12"
@@ -85,28 +74,33 @@ const user = reactive({
             v-model="user.password"
             type="password"
             label="Password"
-          >
-            <template v-slot:prepend> </template>
-          </q-input>
+            class="col-12"
+          />
         </q-form>
       </q-card-section>
-      <q-card-section class="text-center text-grey text-weight-regular">
-        People who use our service may have uploaded your contact information to Instagram. Learn more
+
+      <q-card-section class="text-center">
+        <div>
+          People who use our service may have uploaded your contact information
+          to Instagram.
+        </div>
       </q-card-section>
-      <q-card-section class="text-center text-grey text-weight-regular">
-        By signing up, you agree to our Terms. Learn how we collect, use and share your data in our Privacy Policy and how we use cookies and similar technology in our Cookies Policy.
+      <q-card-section class="text-center">
+        <div>By signing up, you agree to our</div>
       </q-card-section>
-      <q-card-section class="text-center text-blue-10 text-weight-bold">
+
+      <!-- Sign up Button -->
+      <q-card-actions class="q-pb-xl">
         <q-btn
-          align="center"
+          align="around"
           unelevated
           size="md"
           color="light-blue"
-          class="full-width text-white text-center"
-          label="Next"
+          class="full-width text-white"
+          label="Sign Up"
           :to="{ name: 'InstagramFeed' }"
         />
-      </q-card-section>
+      </q-card-actions>
     </q-card>
 
     <q-card square class="q-mt-md">
@@ -114,7 +108,7 @@ const user = reactive({
         <q-card-section> Have an account? </q-card-section>
         <q-card-section>
           <q-btn
-            label="Log In"
+            label="Log in"
             flat
             size="12px"
             color="blue"
@@ -125,7 +119,9 @@ const user = reactive({
       </div>
     </q-card>
 
-    <p class="col-12 text-center q-mt-md text-weight-regular">Get the app.</p>
+    <div class="col-12 text-center q-my-lg text-weight-regular">
+      Get the app.
+    </div>
     <div class="row justify-center">
       <q-img
         class="col-6 q-pr-sm"
