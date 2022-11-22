@@ -12,82 +12,61 @@ const isSignUp = ref(false);
 
 <template>
   <div class="col-6 q-pt-xs q-pb-lg">
-    <q-card square class="shadow-1">
+    <q-card square class="shadow-1 q-mx-lg">
       <q-card-section class="white text-center">
         <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
       </q-card-section>
       <q-card-section>
         <q-form class="q-px-sm q-pt-sm q-pb-xs q-gutter-sm">
           <q-input
+            dense
+            class="q-px-lg"
             color="grey-12"
             bg-color="grey-12"
             outlined
             square
-            clearable
-            v-model="user.email"
-            type="email"
-            label="Phone number, username or email address"
+            v-model="user.password"
+            type="password"
+            label="Username"
           >
             <q-separator />
 
             <template v-slot:prepend> </template>
           </q-input>
           <q-input
+            dense
+            class="q-px-lg"
             color="grey-12"
             bg-color="grey-12"
             outlined
             square
-            clearable
             v-model="user.password"
             type="password"
             label="Password"
           >
             <template v-slot:prepend> </template>
           </q-input>
+
+          <q-card-actions class="q-px-lg">
+            <q-btn
+              flat
+              no-caps
+              label="Next"
+              class="text-white bg-light-blue col-12"
+            />
+          </q-card-actions>
         </q-form>
       </q-card-section>
-      <q-card-actions class="q-px-lg q-pb-sm">
-        <q-btn
-          align="around"
-          unelevated
-          size="md"
-          color="light-blue"
-          class="full-width text-white"
-          label="Log In"
-          :to="{ name: 'InstagramFeed' }"
-        />
-      </q-card-actions>
-      <div class="q-pt-xs">
-        <q-card-section class="text-center text-blue-gray-8">
+      <q-card-section>
+        <div class="col-12 text-center text-weight-regular q-mx-sm">
           OR
-        </q-card-section>
-      </div>
-      <div class="q-pt-xs">
-        <q-card-section class="text-center text-blue-10 text-weight-bold">
-          <q-btn
-            icon="fa-brands fa-square-facebook"
-            label="Log in with Facebook"
-            no-caps
-            flat
-          />
-        </q-card-section>
-      </div>
-
-      <q-card-section
-        class="text-center text-caption text-blue-10 text-weight-lighter"
-      >
-        <q-btn
-          class="text-center text-caption text-blue-10 text-weight-lighter"
-          label="Forgot password?"
-          no-caps
-          flat
-        />
+        </div>
       </q-card-section>
     </q-card>
 
-    <q-card square class="q-mt-md">
+    <q-card square class="q-mt-md q-mx-lg">
       <div class="row justify-center items-center">
-        <q-card-section> Have an account? </q-card-section>
+        <q-card-section> Don't have an account? </q-card-section>
         <q-card-section>
           <q-btn
             label="Sign Up"
@@ -101,7 +80,7 @@ const isSignUp = ref(false);
       </div>
     </q-card>
 
-    <div class="col-12 text-center q-mt-md text-weight-regular">
+    <div class="col-12 text-center q-mt-md text-weight-regular q-pb-sm">
       Get the app.
     </div>
     <div class="row justify-center">

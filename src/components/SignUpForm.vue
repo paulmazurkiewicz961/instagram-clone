@@ -8,102 +8,100 @@ const user = reactive({
 </script>
 
 <template>
-  <div class="col-6 q-pt-xs q-pb-lg q-px-xl">
-    <q-card square class="shadow-1 q-px-xl">
-      <!-- Logo -->
+  <div class="col-6 q-pt-xs q-pb-lg">
+    <q-card square class="shadow-1 q-mx-lg">
       <q-card-section class="white text-center">
         <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
       </q-card-section>
-      <q-card-section class="white text-center">
-        <div class="text-body1 text-weight-bolder text-grey-8">
-          Sign up to see photos and videos from your friends
-        </div>
-      </q-card-section>
-
-      <q-card-section class="row justify-center">
+      <div class="text-center text-weight-bold">
+        Sign up to see photos and videos from your friends.
+      </div>
+      <q-card-actions class="q-px-lg q-mx-xl">
         <q-btn
           flat
           no-caps
           icon="fa-brands fa-square-facebook"
           label="Log in with Facebook"
           class="text-white bg-blue col-12"
+          size="12px"
         />
-      </q-card-section>
+      </q-card-actions>
+      <div class="text-center q-pb-xs">OR</div>
 
-      <!--Signup form -->
       <q-card-section>
-        <q-form class="q-pt-sm q-pb-xs q-gutter-sm row">
+        <q-form class="q-px-lg q-pb-sm q-gutter-sm q-mx-sm">
           <q-input
+            dense
+            class="q-px-lg"
             color="grey-12"
             bg-color="grey-12"
             outlined
             square
-            clearable
-            v-model="user.email"
-            type="email"
-            label="Phone number, username or email address"
-            class="col-12"
-          /><q-input
-            color="grey-12"
-            bg-color="grey-12"
-            outlined
-            square
-            clearable
-            v-model="user.email"
-            type="email"
-            label="Phone number, username or email address"
-            class="col-12"
-          />
+            v-model="user.password"
+            type="password"
+            label="Mobile number or Email"
+          >
+            <q-separator />
+
+            <template v-slot:prepend> </template>
+          </q-input>
+
           <q-input
+            dense
+            class="q-px-lg"
             color="grey-12"
             bg-color="grey-12"
             outlined
             square
-            clearable
-            v-model="user.email"
-            type="email"
-            label="Phone number, username or email address"
-            class="col-12"
-          />
+            v-model="user.password"
+            type="password"
+            label="Full name"
+          >
+            <template v-slot:prepend> </template>
+          </q-input>
           <q-input
+            dense
+            class="q-px-lg"
             color="grey-12"
             bg-color="grey-12"
             outlined
             square
-            clearable
+            v-model="user.password"
+            type="password"
+            label="Username"
+          >
+            <q-separator />
+
+            <template v-slot:prepend> </template>
+          </q-input>
+          <q-input
+            dense
+            class="q-px-lg"
+            color="grey-12"
+            bg-color="grey-12"
+            outlined
+            square
             v-model="user.password"
             type="password"
             label="Password"
-            class="col-12"
-          />
+          >
+            <template v-slot:prepend> </template>
+          </q-input>
+
+          <q-card-actions class="q-px-lg">
+            <q-btn
+              flat
+              no-caps
+              label="Next"
+              class="text-white bg-light-blue col-12"
+            />
+          </q-card-actions>
         </q-form>
       </q-card-section>
-
-      <q-card-section class="text-center">
-        <div>
-          People who use our service may have uploaded your contact information
-          to Instagram.
-        </div>
-      </q-card-section>
-      <q-card-section class="text-center">
-        <div>By signing up, you agree to our</div>
-      </q-card-section>
-
-      <!-- Sign up Button -->
-      <q-card-actions class="q-pb-xl">
-        <q-btn
-          align="around"
-          unelevated
-          size="md"
-          color="light-blue"
-          class="full-width text-white"
-          label="Sign Up"
-          :to="{ name: 'InstagramFeed' }"
-        />
-      </q-card-actions>
+      
     </q-card>
 
-    <q-card square class="q-mt-md">
+    <q-card square class="q-mt-md q-mx-lg">
       <div class="row justify-center items-center">
         <q-card-section> Have an account? </q-card-section>
         <q-card-section>
@@ -119,7 +117,7 @@ const user = reactive({
       </div>
     </q-card>
 
-    <div class="col-12 text-center q-my-lg text-weight-regular">
+    <div class="col-12 text-center q-mt-md text-weight-regular q-pb-sm">
       Get the app.
     </div>
     <div class="row justify-center">
