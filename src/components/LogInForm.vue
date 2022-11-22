@@ -12,7 +12,7 @@ const isSignUp = ref(false);
 
 <template>
   <div class="col-6 q-pt-xs q-pb-lg">
-    <q-card square class="shadow-1 q-mx-lg">
+    <q-card square class="shadow-1 q-mx-lg ">
       <q-card-section class="white text-center">
         <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
       </q-card-section>
@@ -27,7 +27,7 @@ const isSignUp = ref(false);
             square
             v-model="user.password"
             type="password"
-            label="Username"
+            label="Phone number, username or email"
           >
             <q-separator />
 
@@ -55,12 +55,26 @@ const isSignUp = ref(false);
               class="text-white bg-light-blue col-12"
             />
           </q-card-actions>
+          <div class="text-center text-blue-grey">OR</div>
+          <q-card-actions class="q-px-lg">
+            <q-btn
+              flat
+              no-caps
+              label="Log in with Facebook"
+              class="text-blue-10 col-12"
+              icon="fa-brands fa-square-facebook"
+            />
+          </q-card-actions>
+          <q-card-actions class="q-px-lg q-mx-xl">
+            <q-btn
+              flat
+              no-caps
+              label="Forgot password?"
+              class="text-blue col-12"
+              size="11px"
+            />
+          </q-card-actions>
         </q-form>
-      </q-card-section>
-      <q-card-section>
-        <div class="col-12 text-center text-weight-regular q-mx-sm">
-          OR
-        </div>
       </q-card-section>
     </q-card>
 

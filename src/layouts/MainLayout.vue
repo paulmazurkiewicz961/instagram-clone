@@ -61,7 +61,7 @@ const leftDrawerOpen = ref(false);
     class="bg-white text-grey"
     >
     <div class="column">
-      <q-toolbar class="justify-center col-6 q-pb-sm"> 
+      <q-toolbar class="justify-center col-6"> 
         <q-btn label="Meta" flat size="12px" padding="xs" no-caps/>
         <q-btn label="About" flat size="12px" padding="xs" no-caps/>
         <q-btn label="Blogs" flat size="12px" padding="xs" no-caps/>
@@ -81,7 +81,7 @@ const leftDrawerOpen = ref(false);
         <!-- To-do: Complete Buttons -->
         <!--Complete the Q-drawer -->
       </q-toolbar>
-      <q-toolbar class="justify-center col-6 q-pb-md">
+      <q-toolbar class="justify-center col-6">
         <q-btn-dropdown label="English" flat size="12px" padding="sm" no-caps>
           <q-item clickable v-close-popup @click="onItemClick">
           <q-item-section>
