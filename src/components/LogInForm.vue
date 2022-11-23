@@ -12,7 +12,7 @@ const isSignUp = ref(false);
 
 <template>
   <div class="col-6 q-pt-xs q-pb-lg">
-    <q-card square class="shadow-1 q-mx-lg ">
+    <q-card square class="shadow-1 q-mx-lg">
       <q-card-section class="white text-center">
         <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
       </q-card-section>

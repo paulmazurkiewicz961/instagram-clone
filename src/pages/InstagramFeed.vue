@@ -78,7 +78,7 @@
         </q-drawer>
       </div>
     </div>
-    <div class="col-5 q-pt-xs q-pb-lg">
+    <div class="col-5 q-pt-xs q-pb-md">
       <q-card square class="q-mt-xl">
         <q-card-section class="row justify-around">
           <q-btn round color="blue" icon="home" />
@@ -86,14 +86,25 @@
           <q-btn round color="red" icon="search" />
           <q-btn round color="yellow" icon="account_circle" />
           <q-btn round color="pink" icon="add_box" />
+          <q-btn round color="green-10" icon="spellcheck" />
+          <q-btn round color="purple-10" icon="contactless" />
         </q-card-section>
       </q-card>
       <q-card square class="q-mt-md">
         <q-card-section class="row justify-start">
-          <q-avatar color="black" text-color="white" icon="bolt" />
+          <q-item clickable v-ripple>
+          <q-item-section side>
+            <q-btn round color="blue-grey" icon="turned_in" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label class="text-bold">Suicide_squadgame</q-item-label>
+            
+          </q-item-section>
+          
+        </q-item>
         </q-card-section>
         <q-card-section class="justify-evenly">
-          <q-img src="../assets/suicidesquad.jpg" width="580px" />
+          <q-img src="../assets/Instalogo.png"/>
         </q-card-section>
         <q-card-section class="row justify-start">
           <q-btn class="row" flat rounded icon="favorite_border" />
@@ -101,7 +112,7 @@
           <q-btn class="row" flat rounded icon="send" />
         </q-card-section>
         <q-card-section class="row justify-start">
-          <p class="text-weight-bold">Likes: Michelle_owens and others</p>
+          <div class="text-weight-bold" >Likes: Michelle_owens and others</div>
         </q-card-section>
         <q-card-section class="column justify-start">
           <div>
@@ -109,12 +120,12 @@
             legendary group will take on the mightiest group of heroes on this
             planet.
           </div>
-          <div class="text-grey text-subtitle2">View all 666 comments</div>
-          <div class="text-grey text-caption">23 hours ago</div>
+          <div class="text-grey text-subtitle2 q-pt-sm">View all 666 comments</div>
+          <div class="text-grey text-caption q-pt-sm">23 hours ago</div>
         </q-card-section>
         <q-separator />
         <q-card-section>
-          <q-input v-model="text" label="Add a comment" />
+          <q-input v-model="text" label="Add a comment..." dense/>
         </q-card-section>
       </q-card>
     </div>
@@ -200,7 +211,7 @@
         </q-item>
       </q-list>
       <div class="col">
-        <div class="row text-grey col">
+        <div class="row text-grey q-pl-lg  col">
           <q-btn label="About" flat size="10px" padding="xs" no-caps />
           <q-btn label="Help" flat size="10px" padding="xs" no-caps />
           <q-btn label="Press" flat size="10px" padding="xs" no-caps />
@@ -209,11 +220,11 @@
           <q-btn label="Privacy" flat size="10px" padding="xs" no-caps />
           <q-btn label="Terms" flat size="10px" padding="xs" no-caps />
         </div>
-        <div class="row text-grey col">
+        <div class="row q-pl-lg text-grey col">
           <q-btn label="Locations" flat size="10px" padding="xs" no-caps />
           <q-btn label="Language" flat size="10px" padding="xs" no-caps />
         </div>
-        <div class="text-grey justify-start col">
+        <div class="text-grey q-pl-lg justify-start col">
           <q-btn
             align="around"
             label="2022 Quasagram By Pawel"

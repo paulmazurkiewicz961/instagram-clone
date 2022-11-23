@@ -13,7 +13,7 @@ const user = reactive({
       <q-card-section class="white text-center">
         <q-img src="../assets/Instalogo.png" height="65px" width="220px" />
       </q-card-section>
-      <div class="text-center text-weight-bold">
+      <div class="text-center text-weight-bold text-blue-grey">
         Sign up to see photos and videos from your friends.
       </div>
       <q-card-actions class="q-px-lg q-mx-xl">
@@ -26,8 +26,7 @@ const user = reactive({
           size="12px"
         />
       </q-card-actions>
-      <div class="text-center q-pb-xs">OR</div>
-
+      <div class="text-center text-blue-grey">OR</div>
       <q-card-section>
         <q-form class="q-px-lg q-pb-sm q-gutter-sm q-mx-sm">
           <q-input
@@ -96,9 +95,9 @@ const user = reactive({
               class="text-white bg-light-blue col-12"
             />
           </q-card-actions>
+          
         </q-form>
       </q-card-section>
-      
     </q-card>
 
     <q-card square class="q-mt-md q-mx-lg">
